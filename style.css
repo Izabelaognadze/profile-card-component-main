@@ -1,0 +1,92 @@
+:root{
+    --crl-Primary-Dark-cyan: hsl(185, 75%, 39%);
+    --crl-Primary-Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --crl-Primary-Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --crl-Neutral-Dark-gray: hsl(0, 0%, 59%);
+
+    --fw-regular:400;
+    --fw-bold: 700;
+    --ff-accent: 'Kumbh Sans', sans-serif;
+    --fs-name-and-stats: 18px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--crl-Primary-Dark-cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+.main{
+    margin: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.main img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product__body{
+    text-align: center;
+    background-color: white;
+    font-family: var(--ff-accent);
+    font-size: var(--fs-name-and-stats);
+    color: var(--crl-Primary-Very-dark-desaturated-blue);
+    font-weight: var(--fw-regular);
+    border-radius: 1rem;
+}
+.avatar{
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: white;
+    z-index: 5;
+    position: relative;
+    margin-top: -52px;
+    margin-bottom: 1rem;
+}
+.age{
+    color: var(--crl-Primary-Dark-grayish-blue);
+    font-weight: var(--fw-regular);
+}
+.city{
+    font-weight: var(--fw-regular);
+    margin-bottom: 2rem;
+    font-size: 14px;
+    color: var(--crl-Primary-Dark-grayish-blue);
+    margin-top: 0.5rem;
+}
+.hr-style{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.statistics{
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1.5rem;
+    color: var(--crl-Primary-Very-dark-desaturated-blue);
+}
+.aps{
+    font-size: 12px;
+    font-weight: var(--fw-regular);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
