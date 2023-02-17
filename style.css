@@ -25,6 +25,7 @@ body{
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
     background-repeat: no-repeat,no-repeat;
     background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    zoom: 1.1;
 }
 .main{
     margin: auto;
